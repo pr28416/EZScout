@@ -130,14 +130,18 @@ export default class ScoutMatchPage extends Component {
                         {/* Taxied? */}
                         <SectionToggle title="Taxied?" jsonID="didTaxi" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginLeft": "6px"}}/>
                     </div>
-                    {/* Auto upper cargo scored */}
-                    <SectionStepper title="Upper cargo scored" jsonID="autoUpperCargoScored" parentCallback={this.componentCallback}/>
-                    {/* Auto upper cargo missed */}
-                    <SectionStepper title="Upper cargo missed" jsonID="autoUpperCargoMissed" parentCallback={this.componentCallback}/>
-                    {/* Auto lower cargo scored */}
-                    <SectionStepper title="Lower cargo scored" jsonID="autoLowerCargoScored" parentCallback={this.componentCallback}/>
-                    {/* Auto lower cargo missed */}
-                    <SectionStepper title="Lower cargo missed" jsonID="autoLowerCargoMissed" parentCallback={this.componentCallback}/>
+                    <div style={{display: "flex"}}>
+                        {/* Auto upper cargo scored */}
+                        <SectionStepper title="Upper cargo scored" jsonID="autoUpperCargoScored" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginRight": "6px", "color": "green"}}/>
+                        {/* Auto upper cargo missed */}
+                        <SectionStepper title="Upper cargo missed" jsonID="autoUpperCargoMissed" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginLeft": "6px", "color": "red"}}/>
+                    </div>
+                    <div style={{display: "flex"}}>
+                        {/* Auto lower cargo scored */}
+                        <SectionStepper title="Lower cargo scored" jsonID="autoLowerCargoScored" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginRight": "6px", "color": "green"}}/>
+                        {/* Auto lower cargo missed */}
+                        <SectionStepper title="Lower cargo missed" jsonID="autoLowerCargoMissed" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginLeft": "6px", "color": "red"}}/>
+                    </div>
 
                     <div style={{display: "flex"}}>
                         {/* Auto fouls */}
@@ -148,14 +152,18 @@ export default class ScoutMatchPage extends Component {
                 </div>)}/>
                 {/* Teleop */}
                 <Section sectionTitle="Teleop" elements={(<div>
-                    {/* Teleop upper cargo scored */}
-                    <SectionStepper title="Upper cargo scored" jsonID="teleopUpperCargoScored" parentCallback={this.componentCallback}/>
-                    {/* Teleop upper cargo missed */}
-                    <SectionStepper title="Upper cargo missed" jsonID="teleopUpperCargoMissed" parentCallback={this.componentCallback}/>
-                    {/* Teleop lower cargo scored */}
-                    <SectionStepper title="Lower cargo scored" jsonID="teleopLowerCargoScored" parentCallback={this.componentCallback}/>
-                    {/* Teleop lower cargo missed */}
-                    <SectionStepper title="Lower cargo missed" jsonID="teleopLowerCargoMissed" parentCallback={this.componentCallback}/>
+                    <div style={{display: "flex"}}>
+                        {/* Teleop upper cargo scored */}
+                        <SectionStepper title="Upper cargo scored" jsonID="teleopUpperCargoScored" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginRight": "6px", "color": "green"}}/>
+                        {/* Teleop upper cargo missed */}
+                        <SectionStepper title="Upper cargo missed" jsonID="teleopUpperCargoMissed" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginLeft": "6px", "color": "red"}}/>
+                    </div>
+                    <div style={{display: "flex"}}>
+                        {/* Teleop lower cargo scored */}
+                        <SectionStepper title="Lower cargo scored" jsonID="teleopLowerCargoScored" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginRight": "6px", "color": "green"}}/>
+                        {/* Teleop lower cargo missed */}
+                        <SectionStepper title="Lower cargo missed" jsonID="teleopLowerCargoMissed" parentCallback={this.componentCallback} customStyle={{"width": "100%", "marginLeft": "6px", "color": "red"}}/>
+                    </div>
                     
                     <div style={{display: "flex"}}>
                         {/* Played defense? */}
