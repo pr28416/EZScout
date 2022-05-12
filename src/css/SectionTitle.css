@@ -1,0 +1,95 @@
+#sectionContainer {
+    margin: 16px;
+    max-width: 400px;
+}
+
+#sectionTitle {
+    background-color: brown;
+    /* display: flex;
+    justify-content: center; */
+    font-size: 24px;
+    padding: 12px;
+    color: aliceblue;
+    border-radius: 10px 10px 0px 0px;
+    font-weight: bold;
+}
+
+#sectionBody {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    border: #b5b5b5 solid 1px;
+    text-align: left;
+}
+
+#sectionHeading {
+    font-weight: bold;
+}
+
+#sectionTextarea {
+    width: 100%;
+    margin: 8px auto;
+    box-sizing: border-box;
+    resize:vertical;
+    height: 80px;
+}
+
+#sectionDropdown {
+    width: 100%;
+    height: 36px;
+    padding: auto 20px;
+    box-sizing: border-box;
+    margin: 8px auto;
+    color: black;
+}
+
+#sectionTextfield {
+    width: 100%;
+    margin: 8px auto;
+    box-sizing: border-box;
+    height: 36px;
+}
+
+#sectionToggle {
+    justify-content: center;
+    display: flex;
+    margin: 8px auto;
+    box-sizing: border-box;
+    height: 36px;
+    width: 36px;
+}
+
+#sectionToggle:checked {
+    accent-color: rgb(255, 184, 43);
+}
+
+#sectionStepperContents {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px auto;
+    text-align: center;
+}
+
+#sectionStepperButton {
+    width: 36px;
+    height: 36px;
+    font-size: large;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(255, 184, 43);
+    font-weight: bold;
+    color: black;
+    padding: 0px;
+}
+
+#generateQRCodeButton {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 184, 43);
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px;
+}
